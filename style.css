@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px;
+}
+
+header, #menu, footer {
+    background-color: rgb(33, 28, 110);
+    color: white;
+    padding: 10px;
+}
+
+/* header styles */
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo name button"
+                         "logo title blank";
+}
+
+#logo {
+    grid-area: logo;
+    width: 100px;
+    justify-self: center;
+    align-self: center;
+}
+
+#name {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+#login-out_btn {
+    grid-area: button;
+    background-color: rgb(52, 42, 201);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 70px;
+    height: 25px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 10px 30px;
+    justify-self: center;
+}
+
+#page-title {
+    grid-area: title;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* menu styles */
+#menu {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(52, 42, 201);
+}
+
+header a, #menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu td {
+    text-align: center;
+    width: 120px;
+    padding: 3px 0px;
+}
+
+/* main styles */
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    height: 65%;
+    text-align: center;
+    overflow: auto;
+}
+
+.main a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* slideshow page */
+.slideshow {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "picture caption";
+    gap: 50px;
+}
+
+.caption {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+}
+
+.slideshow-btn {
+    justify-self: end;
+    align-self: flex-end;
+}
+
+/* form styles */
+form input, textarea, select {
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    margin: 7px;
+    padding: 10px;
+}
+
+form h3 {
+    margin: 5px;
+}
+
+#submit {
+    background-color: rgb(33, 28, 110);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 17px;
+    margin: 7px;
+    
+}
+
+/* slideshow styles */
+#picture {
+    width: 250px;
+    align-self: center;
+}
+
+/* footer styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
